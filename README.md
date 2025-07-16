@@ -16,16 +16,20 @@ This repository contains a Python script for generating and visualizing the deci
 
 ## Output Preview
 
-The script generates the following visualization, which is saved as `final_3dataset_visual/visualization_synthetic.png`:
+The script generates the following visualizations, which are saved in the `results/` directory:
 
-![Classifier Comparison Plot](final_3dataset_visual/visualization_synthetic.png)
+**Main Classifier Comparison (`visualization_synthetic.png`):**
+![Classifier Comparison Plot](results/visualization_synthetic.png)
+
+**Input Expansion Demonstration (`input_expansion_demo_relu.png`):**
+![Input Expansion Plot](results/input_expansion_demo_relu.png)
 
 ## How to Run
 
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <repository-name>
+    git clone https://github.com/Raziehkaveh76/classifier-decisionboundary-visualization.git
+    cd classifier-decisionboundary-visualization
     ```
 
 2.  **Set up a virtual environment (recommended):**
@@ -35,16 +39,16 @@ The script generates the following visualization, which is saved as `final_3data
     ```
 
 3.  **Install dependencies:**
-    The script requires a few common scientific computing libraries.
+    This command installs all the necessary libraries from the `requirements.txt` file.
     ```bash
-    pip install numpy matplotlib scikit-learn
+    pip install -r requirements.txt
     ```
 
 4.  **Run the script:**
     ```bash
     python Synthetic_visualization.py
     ```
-    The script will first display a plot demonstrating the input expansion mechanism and then generate the main comparison plot, saving it to the `final_3dataset_visual/` directory.
+    The script will first display a plot demonstrating the input expansion mechanism and then generate the main comparison plot, saving them to the `results/` directory.
 
 ## Model Details
 
